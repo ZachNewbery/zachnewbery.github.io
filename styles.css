@@ -2,6 +2,10 @@ head {
     display: none;
 }
 
+body {
+    background-color: gray;
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
 }
