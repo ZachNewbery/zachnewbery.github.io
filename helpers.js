@@ -48,7 +48,7 @@ $(document).ready(function(){
     });
     $("#contact-link").click(function() {
         $('html, body').animate({
-            scrollTop: $(document).height
+            scrollTop: $(document).height()
         }, 1000);
     });
 });
