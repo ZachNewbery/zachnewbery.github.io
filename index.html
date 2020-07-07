@@ -3,8 +3,9 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/94b13b6276.js" crossorigin="anonymous"></script>
-        <script src="helpers.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="helpers.js" type="text/javascript"></script>
+        
         <!-- REMEMBER TO RELINK STYLESHEET -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,11 @@
     </head>
     <body>
         <nav id="navbar">
-            <a href="zachnewbery.com"><i class="fas fa-home"></i></a>
-            <a href="zachnewbery.com">About Me</a>
-            <a href="zachnewbery.com">Experience</a>
-            <a href="zachnewbery.com">Projects</a>
-            <a href="zachnewbery.com">Contact</a>
+            <a href="#" id="home-link"><i class="fas fa-home"></i></a>
+            <a href="#" id="about-link">About Me</a>
+            <a href="#" id="resume-link">Experience</a>
+            <a href="#" id="project-link">Projects</a>
+            <a href="#">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="openMenu()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -30,7 +31,7 @@
             </div>
             <div class="column">
                 <img id="profile" src="photos/profile.jpg" />
-                <h1>Zachariah Newbery</h1>
+                <h1 id="about-section">Zachariah Newbery</h1>
                 <h3>Aspiring Software Engineer</h3>
                 <hr>
                 <a href="https://twitter.com/ZachNewbery/" class="icon-button twitter"><i class="icon-twitter fab fa-twitter"></i><span></span></a>
@@ -56,7 +57,7 @@
 
             </div>
             <div class="column resume">
-                <h1>Resume</h1>
+                <h1 id="resume-section">Resume</h1>
                 <h2>Experience</h2>
                 <ul>
                     <li>Experience 1: Time</li>
@@ -78,7 +79,7 @@
             <div class="column-pad">
             </div>
             <div class="column">
-                <h1>Projects</h1>
+                <h1 id="project-section">Projects</h1>
                 <h2>Project 1</h2>
                 <h2>Project 2</h2>
                 <h2>Project 3</h2>

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var navbar = document.querySelector('#navbar');
     var navTop = navbar.offsetTop;
-  
+
     window.addEventListener('scroll', checkNav);
 
     function checkNav() {
@@ -24,6 +24,31 @@ function openMenu() {
         x.classList.add("responsive");
     }
 }
+
+$(document).ready(function(){
+    $("#home-link").click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    $("#about-link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#about-section").offset().top
+        }, 1000);
+    });
+    $("#resume-link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#resume-section").offset().top
+        }, 1000);
+    });
+    $("#project-link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#project-section").offset().top
+        }, 1000);
+    });
+});
+
+
 
 
 

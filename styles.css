@@ -264,7 +264,7 @@ footer {
     }
 
     nav.responsive {
-        position: relative;
+        position: fixed;
     }
 
     nav.responsive a.icon {
