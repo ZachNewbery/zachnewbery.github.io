@@ -1,41 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
 head {
     display: none;
 }
 
 body {
     background-color: gray;
-    background-image: url('bg.jpeg')
+    background-image: url('bg.jpeg');
+    margin: auto;
 }
 
-.topnav {
-    position: fixed;
-    top: 0;
+nav {
     width: 100%;
+    background-color: #333;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
+    padding: 25px;
     text-decoration: none;
-    background-color: rgba(128, 116, 116, 0.6);
-}
-
-.topnav a {
-    float: right;
-    text-decoration: none;
-    color: #f2f2f2;
-    padding: 14px 16px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
 }
 
-.topnav p {
+nav a:hover {
+    color: #ff0000;
+}
+
+.column {
     float: left;
-    font-size: 25px;
-    font-family: 'Playfair Display', serif;
+    width: 40%;
+    padding: 15px;
+    text-align: center;
 }
 
-.active {
-    color: black;
+.column-pad {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .about {
-    margin-top: 500px;
+    font-size: 25px;
+}
+
+#profile {
+    margin-top: 50px;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+hr {
+    width: 50px;
+    height: 5px;
+    background: #333;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-button {
+	background-color: white;
+	border-radius: 3.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.0rem;
+	height: 3.6rem;
+	line-height: 3.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.6rem;
+}
+
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+
+.twitter span {
+	background-color: #4099ff;
+}
+
+.facebook span {
+	background-color: #3B5998;
+}
+
+.github span {
+    background-color: #333;
+}
+
+.linkedin span {
+    background-color: #0e76a8;
+}
+
+.icon-button:hover span {
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 3.6rem;
+	margin: -1.8rem;
+}
+
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.6rem;
+	left: 0;
+	line-height: 3.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.6rem;
+	z-index: 10;
+}
+
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+
+.icon-button .icon-github {
+    color: #333;
+}
+
+.icon-button .icon-linkedin {
+    color: #0e76a8;
+}
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-github,
+.icon-button:hover .icon-linkedin {
+	color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+
+    .column-pad {
+        width: 0%;
+    }
 }
