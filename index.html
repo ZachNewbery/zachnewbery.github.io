@@ -3,8 +3,9 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/94b13b6276.js" crossorigin="anonymous"></script>
+        <script src="helpers.js"></script>
         <!-- REMEMBER TO RELINK STYLESHEET -->
-        <link rel="stylesheet" type="text/css" href="/styles.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="icon/favicon.ico"/>
         <meta name="keywords" content="resume, computer science, software">
@@ -12,12 +13,15 @@
         <title>Zachariah Newbery</title>
     </head>
     <body>
-        <nav>
-            <a href="home.html"><i class="fas fa-home"></i></a>
-            <a href="about.html">About Me</a>
-            <a href="resume.html">Experience</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+        <nav id="navbar">
+            <a href="zachnewbery.com"><i class="fas fa-home"></i></a>
+            <a href="zachnewbery.com">About Me</a>
+            <a href="zachnewbery.com">Experience</a>
+            <a href="zachnewbery.com">Projects</a>
+            <a href="zachnewbery.com">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <section class="row">
             <div class="column-pad">
@@ -33,23 +37,36 @@
                 <a href="https://www.instagram.com/zach_newbery." class="icon-button instagram"><i class="icon-instagram fab fa-instagram"></i><span></span></a>
                 <a href="https://github.com/ZachNewbery" class="icon-button github"><i class="icon-github fab fa-github"></i><span></span></a>
                 <a href="https://www.linkedin.com/in/zachariah-newbery/" class="icon-button linkedin"><i class="icon-linkedin fab fa-linkedin-in"></i><span></span></a>
-                <h1>About Me</h1>
-                <div class="about">
-                    <p>This is a paragraph summarising who I am. This is all just placeholder text until I get around to finishing up the HTML, I just want an estimate so I can decide on the display properties more easily. Just a few more lines should do it, and I think that's enough!</p>
+                <hr>
+                <div class="about-me">
+                    <h1>About Me</h1>
+                    <div class="about">
+                        <p>This is a paragraph summarising who I am. This is all just placeholder text until I get around to finishing up the HTML, I just want an estimate so I can decide on the display properties more easily. Just a few more lines should do it, and I think that's enough!</p>
+                    </div>
                 </div>
+                
             </div>
             <div class="column-pad">
                 
             </div>
         </section>
-        <section class="row">
+        <section class="row resume-row">
             <div class="column-pad">
 
             </div>
             <div class="column resume">
                 <h1>Resume</h1>
                 <h2>Experience</h2>
+                <ul>
+                    <li>Experience 1: Time</li>
+                    <li>Experience 2: Time</li>
+                    <li>Experience 3: Time</li>
+                </ul>
                 <h2>Education</h2>
+                <ul>
+                    <li>Education Place 1: Time, Degree</li>
+                    <li>Education Place 2: Time, Degree</li>
+                </ul>
                 <h2>Skills</h2>
             </div>
             <div class="column-pad">
@@ -69,7 +86,7 @@
 
             </div>
         </section>
-        <footer class="row">
+        <footer>
             <h1>Contact Me</h1>
             <ul>
                 <a href="">Email</a>
