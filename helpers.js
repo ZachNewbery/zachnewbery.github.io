@@ -46,6 +46,11 @@ $(document).ready(function(){
             scrollTop: $("#project-section").offset().top
         }, 1000);
     });
+    $("#contact-link").click(function() {
+        $('html, body').animate({
+            scrollTop: $(document).height
+        }, 1000);
+    });
 });
 
 
