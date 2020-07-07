@@ -113,6 +113,13 @@ hr {
 	background-color: #3B5998;
 }
 
+.instagram span {
+    background: #f09433;
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
 .github span {
     background-color: #333;
 }
@@ -152,6 +159,10 @@ hr {
 	color: #3B5998;
 }
 
+.icon-button .icon-instagram {
+    color: #333;
+}
+
 .icon-button .icon-github {
     color: #333;
 }
@@ -162,6 +173,7 @@ hr {
 
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
+.icon-button:hover .icon-instagram,
 .icon-button:hover .icon-github,
 .icon-button:hover .icon-linkedin {
 	color: white;
