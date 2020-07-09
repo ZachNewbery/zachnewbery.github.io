@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     var navbar = document.querySelector('#navbar');
     var navTop = navbar.offsetTop;
-
+    document.getElementById("defaultLang").click();
     window.addEventListener('scroll', checkNav);
 
     function checkNav() {
@@ -23,6 +23,23 @@ function openMenu() {
     } else {
         x.classList.add("responsive");
     }
+}
+
+function openProjects(evt, language) {
+    var i, content, link;   
+
+    content = document.getElementsByClassName("project-content");
+    for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+    }
+
+    link = document.getElementsByClassName("language");
+    for (i = 0; i < link.length; i++) {
+        link[i].className = link[i].className.replace(" active", "");
+    }
+
+    document.getElementById(language).style.display = "block";
+    evt.currentTarget.className += " active";    
 }
 
 $(document).ready(function(){

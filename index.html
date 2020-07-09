@@ -81,24 +81,44 @@
             </div>
             <div class="column">
                 <h1 id="project-section">Projects</h1>
-                <h2>Project 1</h2>
-                <h2>Project 2</h2>
-                <h2>Project 3</h2>
+                <div class="tabs">
+                    <button class="language" onclick="openProjects(event, 'Java')" id="defaultLang">Java</button>
+                    <button class="language" onclick="openProjects(event, 'C')">C</button>
+                    <button class="language" onclick="openProjects(event, 'Python')">Python</button>
+                    <button class="language" onclick="openProjects(event, 'Haskell')">Haskell</button>
+                </div>
+
+                <div id="Java" class="project-content">
+                    <p>Project</p>
+                </div>
+
+                <div id="C" class="project-content">
+                    <p>Project</p>
+                </div>
+
+                <div id="Haskell" class="project-content">
+                    <p>Project</p>
+                </div>
+
+                <div id="Python" class="project-content">
+                    <p>Project</p>
+                </div>
+                
             </div>
             <div class="column-pad">
 
             </div>
         </section>
-        <footer>
-            <h1>Contact Me</h1>
-            <ul>
-                <a href="">Email</a>
-                <a href="">Phone Number</a>
-                <a href="">Address</a>
-                <a href="">IDK</a>
-            </ul>
-        </footer>
     </body>
+    <footer>
+        <h1>Contact Me</h1>
+        <ul>
+            <a href="">Email</a>
+            <a href="">Phone Number</a>
+            <a href="">Address</a>
+            <a href="">IDK</a>
+        </ul>
+    </footer>
 </html>
 
 
