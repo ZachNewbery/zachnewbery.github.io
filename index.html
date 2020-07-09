@@ -57,31 +57,33 @@
             <div class="column-pad">
 
             </div>
-            <div class="column resume">
-                <h1 id="resume-section">Resume</h1>
+            <div class="column resume"  id="resume-section">
+                <h1>Resume</h1>
                 <button id="download-resume" type="submit" onclick="window.open('robots.txt')"><span>Download Resume</span></button>
-                <h2>Experience</h2>
-                <ul>
-                    <li>Experience 1: Time</li>
-                    <li>Experience 2: Time</li>
-                    <li>Experience 3: Time</li>
-                </ul>
-                <h2>Education</h2>
-                <ul>
-                    <li>Education Place 1: Time, Degree</li>
-                    <li>Education Place 2: Time, Degree</li>
-                </ul>
-                <h2>Skills</h2>
+                <div class="resume-table">
+                    <h2>Experience</h2>
+                    <p>Experience 1: Position, Company, Time</p>
+                    <p>Experience 2: Position, Company, Time</p>
+                    <p>Experience 3: Position, Company, Time</p>
+                    <h2>Education</h2>
+                    <p>Education 1: Degree, Location</p>
+                    <p>Education 2: Degree, Location</p>
+                    <h2>Skills</h2>
+                    <p>Skill 1</p>
+                    <p>Skill 2</p>
+                    <p>Skill 3</p>
+                    <p>Skill 4</p>
+                </div>
             </div>
             <div class="column-pad">
 
             </div>
         </section>
-        <section class="row">
+        <section class="row" id="project-section">
             <div class="column-pad">
             </div>
             <div class="column">
-                <h1 id="project-section">Projects</h1>
+                <h1>Projects</h1>
                 <div class="tabs">
                     <button class="language" onclick="openProjects(event, 'Java')" id="defaultLang">Java</button>
                     <button class="language" onclick="openProjects(event, 'C')">C</button>
@@ -113,12 +115,27 @@
     </body>
     <footer>
         <h1>Contact Me</h1>
-        <ul>
-            <a href="">Email</a>
-            <a href="">Phone Number</a>
-            <a href="">Address</a>
-            <a href="">IDK</a>
-        </ul>
+        <div class="contact-column">
+            <div class="contact-card">
+                <h3>Contact Card</h3>
+                <p>Name: Zachariah Newbery</p>
+                <p>Address: 70 Bridge Street,<br>St. Andrews,<br> Scotland<br>KY16 8AA</p>
+                <p>Phone: +44 (0)74 355 74197 <a href="tel:+447435574197"><i class="fas fa-phone"></i></a><a href="sms:+447435574197"><i class="fas fa-comment-alt"></i></a></p>
+                <p>Email: <a href="mailto:zachariah.newbery@gmail.com">zachariah.newbery@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="contact-column">
+            <h3>Get in Touch!</h3>
+            <form action="/submit.php">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="full-name" placeholder="Please enter your name:"><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Please enter your email:">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:170px"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </footer>
 </html>
 
