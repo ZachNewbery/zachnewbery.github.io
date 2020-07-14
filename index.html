@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="icon/favicon.ico"/>
         <meta name="keywords" content="resume, computer science, software">
-        <meta name="Description" content="Resume of a third-year Computer Science Student, and aspiringSoftware Engineer.">
+        <meta name="Description" content="Resume of a third-year Computer Science Student, and aspiring Software Engineer.">
         <title>Zachariah Newbery</title>
     </head>
     <body>
@@ -61,18 +61,38 @@
                 <h1>Resume</h1>
                 <button id="download-resume" type="submit" onclick="window.open('robots.txt')"><span>Download Resume</span></button>
                 <div class="resume-table">
-                    <h2>Experience</h2>
-                    <p>Experience 1: Position, Company, Time</p>
-                    <p>Experience 2: Position, Company, Time</p>
-                    <p>Experience 3: Position, Company, Time</p>
-                    <h2>Education</h2>
-                    <p>Education 1: Degree, Location</p>
-                    <p>Education 2: Degree, Location</p>
-                    <h2>Skills</h2>
-                    <p>Skill 1</p>
-                    <p>Skill 2</p>
-                    <p>Skill 3</p>
-                    <p>Skill 4</p>
+                    <div class="table-row">
+                        <h2>Experience</h2>
+                        <p>Experience 1: Position, Company, Time</p>
+                        <p>Experience 2: Position, Company, Time</p>
+                        <p>Experience 3: Position, Company, Time</p>
+                        <h2>Education</h2>
+                        <p>Education 1: Degree, Location</p>
+                        <p>Education 2: Degree, Location</p>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-column">
+                            <h2>Proficiencies</h2>
+                            <p>Skill 1</p>
+                            <p>Skill 2</p>
+                            <p>Skill 3</p>
+                            <p>Skill 4</p>
+                        </div>
+                        <div class="table-column">
+                            <h2>Awards</h2>
+                            <p>Skill 1</p>
+                            <p>Skill 2</p>
+                            <p>Skill 3</p>
+                            <p>Skill 4</p>
+                        </div>
+                        <div class="table-column">
+                            <h2>Skills</h2>
+                            <p>Skill 1</p>
+                            <p>Skill 2</p>
+                            <p>Skill 3</p>
+                            <p>Skill 4</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column-pad">
@@ -89,18 +109,22 @@
                     <button class="language" onclick="openProjects(event, 'C')">C</button>
                     <button class="language" onclick="openProjects(event, 'Python')">Python</button>
                     <button class="language" onclick="openProjects(event, 'Haskell')">Haskell</button>
+                    <button class="language" onclick="openProjects(event, 'Other')">Other</button>
                 </div>
 
                 <div id="Java" class="project-content">
                     <div class="cards">
                         <div class="card">
-                            <p>Project 1</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                         <div class="card">
-                            <p>Project 2</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                         <div class="card">
-                            <p>Project 3</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                     </div>
                 </div>
@@ -108,13 +132,16 @@
                 <div id="C" class="project-content">
                     <div class="cards">
                         <div class="card">
-                            <p>Project 1</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                         <div class="card">
-                            <p>Project 2</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                         <div class="card">
-                            <p>Project 3</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                     </div>
                 </div>
@@ -122,13 +149,16 @@
                 <div id="Haskell" class="project-content">
                     <div class="cards">
                         <div class="card">
-                            <p>Project 1</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                         <div class="card">
-                            <p>Project 2</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                         <div class="card">
-                            <p>Project 3</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                     </div>
                 </div>
@@ -136,13 +166,33 @@
                 <div id="Python" class="project-content">
                     <div class="cards">
                         <div class="card">
-                            <p>Project 1</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                         <div class="card">
-                            <p>Project 2</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                         <div class="card">
-                            <p>Project 3</p>
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Other" class="project-content">
+                    <div class="cards">
+                        <div class="card">
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
+                        </div>
+                        <div class="card">
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
+                        </div>
+                        <div class="card">
+                            <h1>Project 1</h1>
+                            <p>This is a short project description I'm writing to get a feel for the style.</p>
                         </div>
                     </div>
                 </div>

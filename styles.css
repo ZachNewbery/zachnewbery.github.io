@@ -246,7 +246,7 @@ hr {
 }
 
 .resume-row button:hover {
-    background-color: #568157; /* Green */
+    background-color: #568157;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -274,6 +274,23 @@ hr {
 .resume-row button:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.resume-table p {
+    font-size: 18px;
+}
+
+.table-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.table-column {
+    float: left;
+    width: 33%;
+    padding: 15px;
+    text-align: center;
 }
 
 .tabs {
@@ -311,7 +328,7 @@ hr {
 
 .cards {
     display: grid;     
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
     grid-auto-rows: auto;    
     grid-gap: 1rem;    
 }
@@ -323,6 +340,17 @@ hr {
     border-radius: 4px;    
     padding: .5rem;    
     transition: all .1s ease-in;
+    background-color: white;
+    text-align: left;
+}
+
+.card h1 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 15px;
+    
 }
 
 .card:hover {
