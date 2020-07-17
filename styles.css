@@ -280,6 +280,14 @@ hr {
     font-size: 18px;
 }
 
+.table-row {
+    text-align: left;
+}
+
+.table-row h2 {
+    text-align: center;
+}
+
 .table-row:after {
     content: "";
     display: table;
