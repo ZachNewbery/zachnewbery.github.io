@@ -286,6 +286,13 @@ hr {
 
 .table-row h2 {
     text-align: center;
+    font-size: 30px;
+}
+
+.table-row p {
+    font-size: 18px;
+    font-family: serif;
+    margin: auto;
 }
 
 .table-row:after {
@@ -299,6 +306,14 @@ hr {
     width: 33%;
     padding: 15px;
     text-align: center;
+}
+
+.table-column h2 {
+    margin-top: auto;
+}
+
+#triplet-break {
+    margin: auto;
 }
 
 .tabs {
@@ -377,9 +392,10 @@ footer {
 }
 
 .contact-column {
-    display: inline-table;
+    float: left;
+    width: 50%;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 .contact-card {
@@ -428,6 +444,10 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width:600px) {
+    body {
+        padding-bottom: 65rem;
+    }
+
     .column {
       width: 100%;
     }
@@ -464,5 +484,9 @@ input[type=submit]:hover {
     .column, input[type=submit] {
         width: 100%;
         margin-top: 0;
+    }
+
+    .contact-column {
+        width: 100%;
     }
 }
