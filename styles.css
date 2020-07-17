@@ -259,16 +259,17 @@ hr {
 }
   
 .resume-row button span:after {
-    content: '\00bb';
+    font-family: 'FontAwesome';
+    content: '\f56d';
     position: absolute;
     opacity: 0;
-    top: 0;
-    right: -10px;
+    margin-top: 3px;
+    right: -20px;
     transition: 0.5s;
 }
 
 .resume-row button:hover span {
-    padding-right: 15px;
+    padding-right: 25px;
 }
 
 .resume-row button:hover span:after {
