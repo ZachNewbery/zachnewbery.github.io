@@ -449,6 +449,12 @@ input[type=submit]:hover {
         padding-bottom: 65rem;
     }
 
+    #profile {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+
     .column {
       width: 100%;
     }
