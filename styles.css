@@ -67,7 +67,7 @@ nav a:hover {
     color: #ff0000;
 }
 
-nav .icon {
+nav .icon { 
     display: none;
 }
 
@@ -477,11 +477,12 @@ input[type=submit]:hover {
         position: fixed;
     }
 
-    nav.responsive a.icon {
+    nav a.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+
     nav.responsive a {
         float: none;
         display: block;
@@ -491,6 +492,10 @@ input[type=submit]:hover {
     .column, input[type=submit] {
         width: 100%;
         margin-top: 0;
+    }
+
+    .table-column h2 {
+        font-size: 20px;
     }
 
     .contact-column {

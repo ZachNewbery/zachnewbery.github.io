@@ -68,6 +68,11 @@ $(document).ready(function(){
             scrollTop: $(document).height()
         }, 1000);
     });
+    $(".icon").click(function() {
+        // $("#about-link").slideToggle();
+    });
+    $("#profile").hide();
+    $("#profile").fadeIn(1500);
 });
 
 
