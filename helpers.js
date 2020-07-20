@@ -15,16 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 })
 
-
-function openMenu() {
-    var x = document.getElementById("navbar");
-    if (x.classList.contains("responsive")) {
-        x.classList.remove("responsive");
-    } else {
-        x.classList.add("responsive");
-    }
-}
-
 function openProjects(evt, language) {
     var i, content, link;   
 
@@ -69,7 +59,8 @@ $(document).ready(function(){
         }, 1000);
     });
     $(".icon").click(function() {
-        // $("#about-link").slideToggle();
+        $(".icon").toggleClass("active");
+        $("#menu").slideToggle();
     });
     $("#profile").hide();
     $("#profile").fadeIn(1500);
