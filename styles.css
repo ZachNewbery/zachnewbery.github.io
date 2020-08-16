@@ -449,6 +449,12 @@ input[type=submit]:hover {
     to {opacity: 1;}
 }
 
+@media screen and (max-width:1000px) {
+	.table-column h2 {
+		font-size: 20px;
+	}
+}
+
 @media screen and (max-width:600px) {
     body {
         padding-bottom: 65rem;
