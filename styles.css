@@ -109,7 +109,8 @@ nav a:hover {
 }
 
 #about-section {
-    margin-bottom: 0;
+    margin: 0;
+    padding-bottom: 0;
 }
 
 hr {
