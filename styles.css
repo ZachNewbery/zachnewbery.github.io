@@ -113,6 +113,10 @@ nav a:hover {
     padding: 0;
 }
 
+#tagline {
+    margin-top: 0;
+}
+
 hr {
     width: 50px;
     height: 5px;
