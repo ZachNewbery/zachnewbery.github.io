@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://kit.fontawesome.com/94b13b6276.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="helpers.js" type="text/javascript"></script>
+        
+        <!-- REMEMBER TO RELINK STYLESHEET -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="icon/favicon.ico"/>
+        <meta name="keywords" content="resume, computer science, software">
+        <meta name="Description" content="Resume of a penultimate-year Computer Science Student, and aspiring Software Engineer.">
+        <title>Zachariah Newbery</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="#" id="home-link"><i class="fas fa-home"></i></a>
+            <h5 id="name-fallback">Zachariah Newbery</h5>
+            <a href="javascript:void(0);" class="icon" id="toggle" onclick="openMenu()"><i class="fas fa-bars"></i></a>
+            <div id="menu">
+                <a href="#" id="about-link">About Me</a>
+                <div class="dropdown">
+                    <a href="#" id="resume-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Resume</a>
+                    <div class="dropdown-menu" aria-labelledby="resume-link">
+                        <a class="dropdown-item" href="#" id="education-link">Education</a>
+                        <a class="dropdown-item" href="#" id="experience-link">Experience</a>
+                        <a class="dropdown-item" href="#" id="awards-link">Awards</a>
+                        <a class="dropdown-item" href="#" id="volunteering-link">Volunteering</a>
+                        <a class="dropdown-item" href="#" id="skills-link">Skills</a>
+                      </div>
+                </div>
+                <a href="#" id="project-link">Projects</a>
+                <a href="#" id="contact-link">Contact</a>
+            </div>
+            
+        </nav>
+        <section class="profile" id="profile">
+            <div class="container">
+                <div class="row align-items-start" id="profile-container">
+                    <div class="col-lg-6 centered">
+                        <img id="profile-photo" src="photos/profile.jpg" />
+                        <hr>
+                        <a href="https://twitter.com/ZachNewbery/" class="icon-button twitter"><i class="icon-twitter fab fa-twitter"></i><span></span></a>
+                        <a href="https://www.facebook.com/zach.newbery/" class="icon-button facebook"><i class="icon-facebook fab fa-facebook-f"></i><span></span></a>
+                        <a href="https://www.instagram.com/zach_newbery" class="icon-button instagram"><i class="icon-instagram fab fa-instagram"></i><span></span></a>
+                        <a href="https://github.com/ZachNewbery" class="icon-button github"><i class="icon-github fab fa-github"></i><span></span></a>
+                        <a href="https://www.linkedin.com/in/zachariah-newbery/" class="icon-button linkedin"><i class="icon-linkedin fab fa-linkedin-in"></i><span></span></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 id="about-section">Zachariah Newbery</h1>
+                        <h4 id="tagline">Final Year CS Student<br>University of St. Andrews</h4>
+                        <button id="download-resume" type="submit" onclick="window.open('Zachariah Newbery - CV.pdf')"><span>Download CV (PDF)</span></button>
+                        <p>I am a final-year computer science student at the University of St. Andrews with a natural curiosity nurtured through self-motivated learning with like-minded students to learn multiple programming languages, alongside a broad academic and linguistic foundation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" name="resume">
+            <div class="container desc">
+                <div class="row" id="education">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Education</h2>
+                        <hr>
+                    </div>
+                
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">MSci Computer Science</p>
+                        <p class="resume-company">University of St. Andrews</p>
+                        <more>
+                            <ul>
+                                <li>Academics</li>
+                                <ul>
+                                    <li>Overall Grade: First Class with Honours (18.3/20)</li>
+                                    <li>Fifth Year: Mean Grade 17.2/20 (First) </li>
+                                    <ul>
+                                        <li>Machine Learning, Concurrency and Multi-Core Architectures, Interactive Hardare and Software, Software Architecture, Individual Masters Programming Project</li>
+                                    </ul>
+                                    <li>Fourth Year: Mean Grade 18.8/20 (First)</li>
+                                    <ul>
+                                        <li>Programming Language Design and Implementation, Audio-Visual Signal Processing, Software Programming Principles, Computer Security, Data Visualisation, Video Games, Computer Architecture, Language and Computation (NLP)</li>
+                                    </ul>
+                                    <li>Third Year: Mean Grade 18.4/20 (First)</li>
+                                    <ul>
+                                        <li>Logic and Reasoning, Operating Systems, AI/ML, Computational Complexity, Databases, HCI, Software Engineering Team Project</li>
+                                    </ul>
+                                    <li>Second Year: Mean Grade 17.7/20 (First)</li>
+                                    <ul>
+                                        <li>Data Structures and Algorithms, Computer Systems, Advanced Programming Projects (Group), Linear Mathematics, Multivariate Calculus</li>
+                                    </ul>
+                                    <li>First Year: Mean Grade 18.4/20 (First)</li>
+                                    <ul>
+                                        <li>OOP, Programming with Data, Programming Projects (Group), Mathematics, Organic and Biological Chemistry 1, Astronomy and Astrophysics 1</li>
+                                    </ul>
+                                    <li>Class Representative for First-Year Computer Science</li>
+                                </ul>
+                                <li>Extra-Curriculars</li>
+                                <ul>
+                                    <li>Taekwondo Society: IT and Alumni Representative (First-Second Year), Treasurer (Second-Fourth Year)</li>
+                                    <li>Singapore Society: Treasurer (First-Third Year)</li>
+                                </ul>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">June 2023</p>
+                        <p class="resume-location">St. Andrews, United Kingdom</p>
+                    </div>
+                    
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">International Baccalaureate</p>
+                        <p class="resume-company">St. Joseph's Institution International</p>
+                        <more>
+                            <ul>
+                                <li>Overall Grade: 43/45 Points (Diploma Awarded)</li>
+                                <li>Higher Level: Physics (7), Chemistry (7), Mathematics (7)</li>
+                                <li>Standard Level: Psychology (7), Spanish Ab Initio (7) English Lang/Lit (6)</li>
+                                <li>Core Points: 2/3</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">November 2017</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container desc">
+                <div class="row" id="experience">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Experience</h2>
+                        <hr>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Software Engineer</p>
+                        <p class="resume-company">Google</p>
+                        <more>
+                            <ul>
+                                <li>Automated Test Insights using LLM Inference for Health and Home Applications</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">March 2024 - Current</p>
+                        <p class="resume-location">Bucharest, Romania</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Site Reliability Engineering Intern</p>
+                        <p class="resume-company">Google</p>
+                        <more>
+                            <ul>
+                                <li>Working within the AdsML team to aid in the data visualisation of user browsing data for client usage.</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">May 2022 - Aug 2022</p>
+                        <p class="resume-location">Dublin, Ireland</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Part-time Undergraduate (Software - GPU)</p>
+                        <p class="resume-company">ARM</p>
+                        <more>
+                            <ul>
+                                <li>Working within the Central Engineering GPU-SW team at ARM as a student ambassador during the academic term.</li>
+                                <li>During summer, working on an assigned project to improve offline tooling for GPUs, through the addition of features using Python and Typescript to work with flow control and post-processing analysis, so as to further my skills in software engineering in a professional environment.</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">March 2021 - May 2022</p>
+                        <p class="resume-location">Cambridge, United Kingdom</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Undergraduate Research Assistant</p>
+                        <p class="resume-company">University of St. Andrews</p>
+                        <more>
+                            <ul>
+                                <li>Implemented data visualisation within a biological evolutionary simulation (S.E.E) using C# within Unity, alongside a GUI for user-guided customisation.
+                                <li>Currently working on the improvement of Docker containerisation for a Jupyter kernel for GAP, a mathematical programming language, alongside the usage of the kernel in the online collaborative workspace Deepnote.</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">September 2020 - December 2022</p>
+                        <p class="resume-location">St. Andrews, United Kingdom</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Senior Student Ambassador</p>
+                        <p class="resume-company">University of St. Andrews</p>
+                        <more>
+                            <ul>
+                                <li>Provided tours to potential students, whilst managing a group of Junior Ambassadors to ensure a smooth operation.</li>
+                                <li>Helped prospective students by answering their queries about life in St. Andrews, and adjusting to it</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">September 2018 - May 2023</p>
+                        <p class="resume-location">St. Andrews, United Kingdom</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Teaching Provider (Part-Time)</p>
+                        <p class="resume-company">St. Joseph's Institution International</p>
+                        <more>
+                            <ul>
+                                <li>Aided teachers in ensuring students understood and had learnt material. Primarily worked with 6-10-year-old children, helping with Math and Science.</li>
+                                <li>Assisted a student who was in remission from Leukaemia, to ensure that her readjustment to school life after hospitalization went smoothly.</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">January 2018 - August 2018</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Data Enterer (Part-Time)</p>
+                        <p class="resume-company">Holmusk</p>
+                        <more>
+                            <ul>
+                                <li>Entered nutritional data into a large database to help collate data for nutritional analysis.</li>
+                                <li>Researched using a multitude of methods to ensure accuracy of data</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">June 2016 - August 2016</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">ECA Provider (Part-Time)</p>
+                        <p class="resume-company">St. Joseph's Institution International</p>
+                        <more>
+                            <ul>
+                                <li>Introduced and taught a group of ~25 6-12-year-old students programming.</li>
+                                <li>Ensured all students were kept engaged, with none of them out of their depth, whilst organizing lessons to ensure all students had something to learn.</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">June 2015 - December 2017</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Dental Work Experience Intern</p>
+                        <p class="resume-company">Thompson Medical Centre</p>
+                        <more>
+                            <ul>
+                                <li>Shadowed a dentist for two weeks in order to experience the schedules and life in dentistry, alongside learning about the technologies utilised by the medical industry.</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">June 2015 - July 2015</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container desc">
+                <div class="row" id="awards">
+                        <div class="col-lg-10 col-lg-offset-1">
+                            <h2>Academic Awards</h2>
+                            <hr>
+                        </div>
+                        <div class="col-lg-7 col-lg-offset-2 position">
+                            <p class="resume-position">Dean's List, Fifth Year</p>
+                            <p class="resume-company">University of St. Andrews </p>
+                            <p><more>The Dean's list is intended to honour high intellectual achievement across the entire spread of a student's modules in a given year. Only students with a credit-weighted mean for the year of 16.5 or above are admitted to the list.</more></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="resume-date">June 2023</p>
+                            <p class="resume-location">St. Andrews, United Kingdom</p>
+                        </div>
+
+                        <div class="col-lg-7 col-lg-offset-2 position">
+                            <p class="resume-position">Dean's List, Fourth Year</p>
+                            <p class="resume-company">University of St. Andrews </p>
+                            <p><more>The Dean's list is intended to honour high intellectual achievement across the entire spread of a student's modules in a given year. Only students with a credit-weighted mean for the year of 16.5 or above are admitted to the list.</more></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="resume-date">June 2022</p>
+                            <p class="resume-location">St. Andrews, United Kingdom</p>
+                        </div>
+
+                        <div class="col-lg-7 col-lg-offset-2 position">
+                            <p class="resume-position">Dean's List, Third Year</p>
+                            <p class="resume-company">University of St. Andrews </p>
+                            <p><more>The Dean's list is intended to honour high intellectual achievement across the entire spread of a student's modules in a given year. Only students with a credit-weighted mean for the year of 16.5 or above are admitted to the list.</more></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="resume-date">June 2021</p>
+                            <p class="resume-location">St. Andrews, United Kingdom</p>
+                        </div>
+
+                        <div class="col-lg-7 col-lg-offset-2 position">
+                            <p class="resume-position">Christopher Strachey Prize</p>
+                            <p class="resume-company">University of St. Andrews </p>
+                            <p><more>Awarded to the best student in CS2001/2101 (Data Structures and Algorithms)</more></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="resume-date">January 2020</p>
+                            <p class="resume-location">St. Andrews, United Kingdom</p>
+                        </div>
+
+                        <div class="col-lg-7 col-lg-offset-2 position">
+                            <p class="resume-position">Dean's List, Second Year</p>
+                            <p class="resume-company">University of St. Andrews </p>
+                            <p><more>The Dean's list is intended to honour high intellectual achievement across the entire spread of a student's modules in a given year. Only students with a credit-weighted mean for the year of 16.5 or above are admitted to the list.</more></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="resume-date">June 2020</p>
+                            <p class="resume-location">St. Andrews, United Kingdom</p>
+                        </div>
+
+                        <div class="col-lg-7 col-lg-offset-2 position">
+                            <p class="resume-position">Dean's List, First Year</p>
+                            <p class="resume-company">University of St. Andrews </p>
+                            <p><more>The Dean's list is intended to honour high intellectual achievement across the entire spread of a student's modules in a given year. Only students with a credit-weighted mean for the year of 16.5 or above are admitted to the list.</more></p>
+                        </div>
+                        <div class="col-lg-3">
+                            <p class="resume-date">June 2019</p>
+                            <p class="resume-location">St. Andrews, United Kingdom</p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="container desc">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Additional Awards</h2>
+                        <hr>
+                    </div>
+    
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Professional Skills Curriculum Award</p>
+                        <p class="resume-company">University of St. Andrews </p>
+                        <p><more>The Professional Skills Curriculum is a co-curricular development programme for students at the University of St Andrews. Participants complete a skills analysis to help them identify a number of professional skills areas to develop in, deemed important by graduate employers. The skills are delivered via a mixture of lectures, practical skills sessions and online workshops. Participants are encouraged to apply their learning to their studies, extra-curricular activities and work experience.</more></p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">June 2021</p>
+                        <p class="resume-location">St. Andrews, United Kingdom</p>
+                    </div>
+    
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">3rd Degree Black Belt in Taekwondo</p>
+                        <p class="resume-company">Singapore Taekwondo Federation (STF)</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">June 2018</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+    
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">2nd Degree Kukkiwon in Taekwondo</p>
+                        <p class="resume-company">World Taekwondo Federation (WT)</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">June 2019</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+    
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Bronze Medal in Poomsae</p>
+                        <p class="resume-company">National Student Taekwondo Championships</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">February 2019</p>
+                        <p class="resume-location">Manchester, United Kingdom</p>
+                    </div>
+    
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">NYAA Gold Award</p>
+                        <p class="resume-company">National Youth Achievement Award Council</p>
+                        <p><more>The National Youth Achievement Gold Award is presented to students demonstrating the highest level of commitment and dedication to both self and community. It shows a perseverance in sports, community service and creative arts, creating skills cultivated over multiple years.</more></p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">January 2018</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Grade 5 in Saxophone</p>
+                        <p class="resume-company">Associated Board of the Royal Schools of Music (ABRSM)</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">January 2018</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Gold Medal in Kyorugi</p>
+                        <p class="resume-company">2016 International School Taekwondo Championships</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">April 2016</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container desc">
+                <div class="row" id="volunteering">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Volunteering Work</h2>
+                        <hr>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Asian Women's Welfare Association (AWWA)</p>
+                        <p class="resume-company">Student Volunteer</p>
+                        <more>
+                            <ul>
+                                <li>Returned to AWWA to aid with a few classes in preparation for the next academic year</li>
+                                <li>Planned and prepared classroom and common areas, alongside some teaching materials</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">October 2016 - November 2016</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Juara Turtle Project</p>
+                        <p class="resume-company">Challenge Week Volunteer</p>
+                        <more>
+                            <ul>
+                                <li>Planned a self-funded charity trip to Tioman Island in aid of the Juara Turtle Project</li>
+                                <li>Organised fundraising events in order to secure money for the trip</li>
+                                <li>Helped to raise awareness during the week-long expedition, whilst ensuring that the habitat were safe for the new wave of hatching eggs occuring after we left</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">April 2016 - October 2016</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">St. Joseph's Institution International</p>
+                        <p class="resume-company">Maths/Science Tutor</p>
+                        <more>
+                            <ul>
+                                <li>Tutored three struggling students in Mathematics with supplementary aid in the Natural Sciences</li>
+                                <li>Focused mainly on Maths, Physics and Chemistry, with sessions conducted weekly</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">January 2016 - December 2016</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">St. Joseph's Institution International</p>
+                        <p class="resume-company">Peer Support Mentor</p>
+                        <more>
+                            <ul>
+                                <li>Provided a class of younger students (Year 7) a mentor/big-sibling figure, helping them to adjust to the stresses and challenges of High School</li>
+                                <li>Joined the class on their week-long trip to Loola in aid of the orphanage, as well as building a library</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">January 2016 - December 2016</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Asian Women's Welfare Association (AWWA)</p>
+                        <p class="resume-company">Student Volunteer</p>
+                        <more>
+                            <ul>
+                                <li>Helped students with special needs in their after-school classes</li>
+                                <li>Aided in setting up the classroom for the kids, alongside interacting and playing with them</li>
+                                <li>Attempted to help the kids artistic and basic motor skills develop</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">April 2015 - July 2015</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Lee Ah Mooi Old Folks Home</p>
+                        <p class="resume-company">Student Volunteer</p>
+                        <more>
+                            <ul>
+                                <li>Returned to Lee Ah Mooi for a few months</li>
+                                <li>Continued with tasks done previously, alongside a few extra logistical tasks</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">January 2014 - June 2014</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Loola Orphanage</p>
+                        <p class="resume-company">Student Volunteer</p>
+                        <more>
+                            <ul>
+                                <li>Week-long trip to Bintan, helping in teaching/playing with young children from a nearby orphanage</li>
+                                <li>Fundraised cash to give to the orphanage prior to the trip</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">August 2012 - August 2012</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+
+                    <div class="col-lg-7 col-lg-offset-2 position">
+                        <p class="resume-position">Lee Ah Mooi Old Folks Home</p>
+                        <p class="resume-company">Student Volunteer</p>
+                        </p>
+                        <more>
+                            <ul>
+                                <li>Visited old age home weekly, interacting with the residents there</li>
+                                <li>Served meals to them and helped feed a few of those with deteriorating motor skills</li>
+                            </ul>
+                        </more>
+                    </div>
+                    <div class="col-lg-3">
+                        <p class="resume-date">January 2012 - December 2012</p>
+                        <p class="resume-location">Singapore, Singapore</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container desc">
+                <div class="row centered" id="skills">
+                    <hr>
+                    <div class="col-lg-4">
+                        <p class="resume-position">Tools</p><br/>
+                        <more>Unit Testing</more><br/>
+                        <more>LaTeX</more><br/>
+                        <more>HTML/CSS</more><br/>
+                        <more>Sphinx (AST)</more><br/>
+                        <more>Cabal</more><br/>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="resume-position">Languages</p><br/>
+                        <more>Java</more><br/>
+                        <more>C</more><br/>
+                        <more>Python</more><br/>
+                        <more>SQL</more><br/>
+                        <more>Typescript</more><br/>
+                        <more>Haskell</more><br/>
+                        <more>Rust</more><br/>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="resume-position">Skills</p><br/>
+                        <more>Agile Management</more><br/>
+                        <more>Project Planning</more><br/>
+                        <more>Leadership</more><br/>
+                        <more>Problem Solving</more><br/>
+                        <more>Organisation</more><br/>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <section class="projects" id="project-section">
+            <div class="container desc">
+                <div class="row">
+                    <h1 class="centered">Projects</h1>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p class="centered">Note: Coursework repositories are set to private in order to ensure good academic practice, and prevent plagiarism, but are accessible on demand.</p>
+                        <div class="tabs">
+                            <button class="language" onclick="openProjects(event, 'Java')" id="defaultLang">Java</button>
+                            <button class="language" onclick="openProjects(event, 'C/C++')">C/C++</button>
+                            <button class="language" onclick="openProjects(event, 'C#')">C#</button>
+                            <button class="language" onclick="openProjects(event, 'Python')">Python</button>
+                            <button class="language" onclick="openProjects(event, 'Web')">Web</button>
+                            <button class="language" onclick="openProjects(event, 'Rust')">Rust</button>
+                            <button class="language" onclick="openProjects(event, 'Haskell')">Haskell</button>
+                            <button class="language" onclick="openProjects(event, 'Other')">Other</button>
+                        </div>
+
+                        <div id="Java" class="project-content">
+                            <div class="cards">
+                                <div class="card">
+                                    <h1>CS5033 - Story Plot Management System</h1>
+                                    <p>Architectural analysis of a specification for a collaborative story writing system, alongside a skeletal implementation (method stubs).</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4201 - MiniJava Typechecker</h1>
+                                    <p>Implementation of a type & scope-checker for the MiniJava language, making use of the ANTLR parser to generate an AST to work with.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4201 - Lambda Calculus Translator and Evaluator</h1>
+                                    <p>Implementation of a translator for the Funl language (a restricted subset of Haskell) to the lambda calculus, and an evaluator that would reduce the lambda calculus representation to its normal form.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4303 - Ballista Command Video Game</h1>
+                                    <p>Implementation of a variation of Missile Command (1981) written using java-processing. Functionality included wave-based difficulty progression, projectiles affected by gravity & drag, phase transitions, and custom sprites and sounds.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4303 - Robotron4303 Video Game</h1>
+                                    <p>Implementation of a variation of Robotron: 2084 (1982) written using java-processing. Functionality included wave-based difficulty progression, AI-based enemies with variable behaviours, procedural level generation with binary space partitioning, and custom sprites and sounds.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4303 - Wanderer's Path Video Game</h1>
+                                    <p>Implementation of the game Wanderer's Path, a self-designed game combining the concepts of snake-based movement and tower defence as a top-down RPG. Functionality included range-based auto-attacks via a ray-casting algorithm, novel AI pary-based behaviours, procedural level generation, unique player upgrade trees, boss battles, and a GUI alongside custom sprites and sounds.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS3105 - Searching Methods in AI</h1>
+                                    <p>Implementation of Best First Search (with both Manhattan and A* heuristics) to determine the number of moves to solve the eights puzzle, with customization allowing for sizes beyond 3x3. Iterative Deepening search with Branch and Bound characteristics was also added for comparison.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS3105 - Multi-Level Neural Network</h1>
+                                    <p>Implementation of a multi-level neural network utilising MiNet to recognise hand-written digits. Analysis was conducted on the effect of numerous hyper-parameters on the performance of the network.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>OpenCV Facial Recognition</h1>
+                                    <p>Personal project getting a handle of the OpenCV library, implementing live facial detection via a webcam, using Haar and LBP cascades, and facial recognition with a trained EigenFaceRecogniser model.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS3101 - Squash Club Database + GUI</h1>
+                                    <p>Implementation of a database given a relational schema and scenario description, alongside a GUI written with JavaFX to perform queries and insert/access data without any user interaction with the database.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS2001 - FSM</h1>
+                                    <p>Developed a program which can intepret basic Finite State Machines from a description of the transition table giving rise to the machine. Furthermore, ensured definitions were legal.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS2001 - Algorithmic Complexity</h1>
+                                    <p>Implementation of merge and selection sort within Java, alongside numerical analysis in order to determine their complexities in comparison to the literature values.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS1006 - Hex</h1>
+                                    <p>Creating a working simulation of the game Hex using Java , allowing connection between a client and a server, or 2 players on the same device. Developed alongside a GUI for comfortable user interaction. Furthered network skills, and UX programming.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS1006 - Mini-Compiler</h1>
+                                    <p>Paired work writing a LOGO to PostScript compiler, requiring skills in lexical analysis, tokenisation, and error reporting.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS1006 - Starcraft Optimiser</h1>
+                                    <p>Optimisation of the populat game Starcraft II: Wings of Liberty. Attempts to locate the fastest path to a user-defined goal via simulation and heuristic pruning. Also developed alongside a basic GUI.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="C/C++" class="project-content">
+                            <div class="cards">
+                                <div class="card">
+                                    <h1>CS4204 - Parallel Pattern Interface</h1>
+                                    <p>Header-only library implementing a high-level interface for two stream-parallel patterns - farms and pipelines - using pthreads, abstracting over the lower-level functionality pertinent to parallelism and allowing pattern nesting.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4204 - Concurrent Set</h1>
+                                    <p>Implementation of three different strategies to achieve safe concurrent access to a Set data structure - a global mutex, a finer-grained lazy-deletion, and a lock-free atomic compare-and-swap strategies.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4202 - Branch Predictor Component Simulator</h1>
+                                    <p>Implementation of four different branch predicition algorithms (always-taken, bimodal, gshare and spotlight) to be used on trace files for accuracy evaluation.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS3104 - Simple File System</h1>
+                                    <p>Implementation of a simple FAT file system in C, stored on a local file, extended to have measures for concurrency control and access.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS3104 - Simple Shell</h1>
+                                    <p>Implementation of a simple shell making use of system calls in C. Subset of Unix bash commands implemented, alongside file redirection and piping, background execution and the usage of shell variables (alongside environment variables).</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS2001 - Character Counter</h1>
+                                    <p>Simplistic C program written to determine the counts of individual characters within a text file, to get a feel for contructing simple data abstraction in C.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS2001 - Logic</h1>
+                                    <p>Development of a program which looks at logical inference, determining whether a set of user-defined clauses will lead to a contradiction. Made use of part of the DPLL algorithm in order, namely unit propagation.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS2001 - Thread Safety</h1>
+                                    <p>Multi-threaded program simulating a fixed-size generic Stack. Ensured thread-safety and blocking functionality, through the usage of semaphores and mutexes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Rust" class="project-content">
+                            <div class="cards">
+                                <div class="card">
+                                    <h1>CS3099 - Federated Social Media (Backend)</h1>
+                                    <p>Rust-based backend to post and query to a MariaDB remote database using Diesel for MySQL functionality. Used to store usernames, posts and communities on the federated network.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Haskell" class="project-content">
+                            <div class="cards">
+                                <div class="card">
+                                    <h1>CS2006 - REPL Calculator</h1>
+                                    <p>Group project coded to create a simulation of a scientific calculator, allowing for function creation amongst other features.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS2006 - Othello</h1>
+                                    <p>Console-based implementation of the board game othello, alongside multiple user enhancements, some basic AI opponents, and network playability.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Python" class="project-content">
+                            <div class="cards">
+                                <div class="card">
+                                    <h1>CS5014 - Seal Image Classification Model</h1>
+                                    <p>Evaluation of several classification algorithms to classify aerial seal images, using k-fold cross validation and hyper-parameter tuning to determine an optimal model</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS5014 - Bean Type Regression Model</h1>
+                                    <p>Logistic regression model that could predict a type of bean given 16 image features within a provided dataset.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS5012 - Parts-of-Speech Tagging in NLP</h1>
+                                    <p>Implementation of three alternate algorithms for parts-of-speech tagging (eager, viterbi, local decoding) for accuracy comparison and evaluation, using the Universal Dependencies treebanks for multiple languages.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4203 - Rhythmic Keylogger Authentication</h1>
+                                    <p>Keylogger application written to log keypresses and the rhythm of a user to aid in the assessment of typing rhythm as a plausible biometric authenticator.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS3052 - Complexity Analysis</h1>
+                                    <p>Implementation of three different algorithms solving the closest-pairs problem, including a randomised linear-time sieve algorithm. Code was also written to plot and conduct data analysis on said algorithms through matplotlib and scipy.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS2006 - Distorted Integers</h1>
+                                    <p>Implementation of a new arithmatic operation (Distorted Integers), and functions to ensure that mathmatical properties are upheld. Also included an algorithm to determine the span of such an operation with given parameters.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS2006 - Dataset Analysis</h1>
+                                    <p>Program written to analysis wikipedia data dumps, checking the consistency of the data, and performing moderately complex descriptive analysis of the data using the pandas library.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Web" class="project-content">
+                            <div class="cards">
+                                <div class="card">
+                                    <h1>CS5041 - Interactive Museum Exhibit</h1>
+                                    <p>Two independent web interfaces visualising data sourced from several IoT sensors - a modular dashboard created with React through the Expo framework, providing digestible summaries of the sensor data; and a creative P5 sketch of a generative landscape based on sensor values.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS5041 - Melody Match-Up Game</h1>
+                                    <p>Melody-matching game making use of the Microsoft Kinect and a simple Arduino piano to teach students about the spatial mapping of musical notes - aiding in music education.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS5041 - Shared To-Do List</h1>
+                                    <p>To-do list web app to help increase productivity and higher communication between collaborating users, allowing them to create and login to personal accounts to create, view, delete and edit to-do list items containing descriptions, due dates, and assignees (other users).</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS5041 - Asteroids:Reloaded micro:bit Controls</h1>
+                                    <p>Alternative control scheme for an adapted version of the game `Asteroids:Reloaded` comprising of two BBC micro:bits (1x v1, 1 x v2) and enabling players to control the game through a WebSerial connection</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS3099 - Federated Social Media (Frontend)</h1>
+                                    <p>Web server to serve posts handled by Rust backend, allowing for user authentication and navigation.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS5044 - D3 Data Visualisation</h1>
+                                    <p>Hand-written website employing HTML, CSS, JavaScript alongside the D3 and Bootstrap libraries to create an interactive data visualisation based on input CSV files.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="C#" class="project-content">
+                            <div class="cards">
+                                <div class="card">
+                                    <h1>Research Intern Project - Data visualisation in S.E.E.</h1>
+                                    <p>Implemented data visualisation within a biological evolutionary simulation (S.E.E) using C# within Unity, alongside a GUI for user-guided customisation. Improved the process flow for capturing data points for post-simulation analysis, removing previous file-dumping overhead.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Other" class="project-content">
+                            <div class="cards">
+                                <div class="card">
+                                    <h1>Research Intern Project - GAP in Jupyter</h1>
+                                    <p>Implementation of a docker container to aid in the usage of Jupyter notebooks with the GAP language for usage in deepnote for collaborative projects.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4302 - Audio Processing</h1>
+                                    <p>Matlab program written to remove common background noise from provided signals to isolate a base audio file.</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS4302 - Image Processing</h1>
+                                    <p>Matlab program written to automatically segment an image taken of a pile of pills to count the number of pills within the image (and extended to work with different types of pills).</p>
+                                </div>
+                                <div class="card">
+                                    <h1>CS5012 - Grammar Design</h1>
+                                    <p>Designed a grammar to model a sub-set of the English language, via basic terminal rules for lexical entries, non-terminal productions for basic sentences. Advanced features such as verb forms, number agreement, preterite, gerundive and modal verbs in verb phrases, and subcategorisation of verbs were also implemented.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <footer>
+        <div id="footwrap" class="footer">
+            <div class="row">
+                <h1>Contact Me</h1>
+                <div class="col-lg-4 col-lg-offset-2">
+                    <div class="card profile-card">
+                        <div class="background-block">
+                            <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background"/>
+                        </div>
+                        <div class="profile-thumb-block">
+                            <img src="photos/profile.jpg" alt="profile-image" class="profile"/>
+                        </div>
+                        <div class="card-content">
+                        <h2>Zachariah Newbery<small>Computer Science Student</small></h3>
+                        <div class="icon-block"><a href="mailto:me@zachnewbery.com"><i class="fa fa-envelope"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <form action="https://formspree.io/xgenrvaq" method="POST">
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" placeholder="Please enter your name..."><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="text" name="_replyto" placeholder="Please enter your email..."><br>
+
+                        <label for="message">Message</label><br>
+                        <textarea name="message" placeholder="Write something.." style="height:170px"></textarea><br>
+                        
+                        <div class="recaptcha-center">
+                            <div class="g-recaptcha" data-sitekey="6Lees8YZAAAAAMANJ6iIDRKYWtgp-FbnfJxNp8TG"></div>
+                        </div><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>                
+            </div>
+        </div>
+    </footer>
+</html>
+
+
+
+
+

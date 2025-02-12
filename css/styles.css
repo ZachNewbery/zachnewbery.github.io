@@ -1,0 +1,712 @@
+body {
+    position: relative;
+    padding-bottom: 55rem;
+    min-height: 100%;
+    min-width: 100%;
+    margin: auto;
+    background: url('../photos/bg.jpeg') no-repeat center;
+    background-size: 100% 10%;
+    background-position: top;
+    background-attachment: local;
+    background-color: whitesmoke;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway"; /* OPTIONAL: Google Fonts - title font */
+  font-weight: 300;
+  color: black;
+}
+
+/* Paragraph & Typographic */
+p {
+  line-height: 28px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+  color: #1CBCAD;
+  word-wrap: break-word;
+
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Global Values */
+.desc {
+  padding-top: 50px;
+}
+
+.desc t {
+  font-weight: 700;
+}
+
+.desc imp {
+  padding: 6px;
+  background: #64c264;
+  border-radius: 10px;
+}
+
+sm {
+  font-size: 15px;
+}
+
+.container .row p.tight {
+  margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+#menu {
+    display: inline-block;
+}
+
+#name-fallback {
+    display: none;
+}
+
+nav {
+    left: 20%;
+    width: 60%;
+    background-color: white;
+    border-radius: 5px;
+    display: inline-block;
+    position: fixed;
+    text-align: center;
+    z-index: 100000;
+}
+
+nav div {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.637);
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: rgba(211, 211, 211, 0.411);
+}
+
+#toggle {
+    color: rgba(0, 0, 0, 0.637); 
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    z-index: 100000;
+}
+
+.dropdown-item {
+    width: 100%;
+}
+
+/* Profile */
+#profile-photo {
+    padding-top: 10px;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+#profile {
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+#profile-container {
+    border-radius: 5px;
+    width: 80%;
+    padding: 30px 30px;
+    background-color: white;
+    margin: auto;
+}
+
+#tagline {
+    margin-top: 0;
+}
+
+.icon-button {
+	background-color: white;
+	border-radius: 5rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2.5rem;
+	height: 5rem;
+	line-height: 5rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 5rem;
+}
+
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+
+.twitter span {
+	background-color: #4099ff;
+}
+
+.facebook span {
+	background-color: #3B5998;
+}
+
+.instagram span {
+    background: #f09433;
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.github span {
+    background-color: #333;
+}
+
+.linkedin span {
+    background-color: #0e76a8;
+}
+
+.icon-button:hover span {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+	margin: -2.5rem;
+}
+
+.icon-button i {
+	background: none;
+	color: white;
+	height: 5rem;
+	left: 0;
+	line-height: 5rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 5rem;
+	z-index: 10;
+}
+
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+
+.icon-button .icon-instagram {
+    color: #333;
+}
+
+.icon-button .icon-github {
+    color: #333;
+}
+
+.icon-button .icon-linkedin {
+    color: #0e76a8;
+}
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-instagram,
+.icon-button:hover .icon-github,
+.icon-button:hover .icon-linkedin {
+	color: white;
+}
+
+/* About Wrap */
+.about-me {
+    padding: 15px;
+    border-radius: 25px;
+    background-color: rgba(100, 100, 100, 0.95);
+}
+
+#download-resume {
+    background-color: #64c264;
+    border: 1px solid green;
+    border-radius: 25px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    margin: 10px 0px;
+}
+
+#download-resume:hover {
+    background-color: #568157;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#download-resume span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#download-resume span:after {
+    font-family: 'FontAwesome';
+    content: '\f56d';
+    position: absolute;
+    opacity: 0;
+    margin-top: 2px;
+    right: -20px;
+}
+
+#download-resume:hover span {
+    padding-right: 25px;
+}
+
+#download-resume:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Resume Sections */
+#resume {
+    margin: auto;
+    width: 60%;
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.position {
+    margin-bottom: 20px;
+}
+
+.resume-position {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.resume-company {
+    font-style: oblique;
+    color: rgb(66, 133, 244);
+}
+
+.resume-date {
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.resume-location {
+    font-style: oblique;
+}
+
+/* Projects */
+.tabs {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+.tabs button.active {
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+.project-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+
+.cards {
+    display: grid;     
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-auto-rows: auto;    
+    grid-gap: 1rem;    
+}
+
+.card {
+    position: relative;
+    top: 0;
+    border: 2px solid #e7e7e7;    
+    border-radius: 4px;    
+    padding: .5rem;    
+    transition: all .1s ease-in;
+    background-color: white;
+    text-align: left;
+}
+
+.card h1 {
+    font-size: 20px;
+    color:rgb(0, 0, 0)
+}
+
+.card p {
+    font-size: 15px;
+    color:rgb(0, 0, 0)
+}
+
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+/* Contact Details */
+footer {
+    position: absolute;
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(100, 102, 79, 0.897);
+}
+
+/*Profile Card 3*/
+.profile-card {
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+    float: none;
+    overflow: hidden;
+    width: 80%;
+    text-align: center;
+    height: 368px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.profile-card .background-block {
+    float: none;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.profile-card .background-block .background {
+    width:100%;
+    vertical-align: top;
+    opacity: 0.9;
+    -webkit-filter: blur(0.5px);
+    filter: blur(0.5px);
+    -webkit-transform: scale(1.8);
+    transform: scale(2.8);
+}
+
+.profile-card .card-content {
+    width: 100%;
+    padding: 15px 25px;
+    color:#232323;
+    float:left;
+    background:#efefef;
+    height:50%;
+    border-radius:0 0 5px 5px;
+    position: relative;
+    z-index: 9999;
+}
+
+.profile-card .card-content::before {
+    content: '';
+    background: #efefef;
+    width: 120%;
+    height: 100%;
+    left: 11px;
+    bottom: 51px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-13deg);
+}
+
+.profile-card .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    max-width: 100px;
+    opacity: 1;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 1);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    z-index:99999;
+}
+
+.profile-card h2 {
+    margin: 0 0 5px;
+    font-weight: 600;
+    font-size:25px;
+    color:rgb(0, 0, 0);
+}
+
+.profile-card h2 small {
+    display: block;
+    font-size: 15px;
+    margin-top:10px;
+}
+
+.profile-card i {
+    display: inline-block;
+    font-size: 16px;
+    color: #232323;
+    text-align: center;
+    border: 1px solid #232323;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+
+.profile-card .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+}
+
+.profile-card .icon-block a{
+    text-decoration:none;
+}
+
+.profile-card i:hover {
+    background-color:#232323;
+    color:#fff;
+    text-decoration:none;
+}
+
+form {
+    padding-top: 25px;
+}
+
+form label {
+    color:rgb(0, 0, 0);
+}
+
+input[type=text], select, textarea {
+    float: center;
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.recaptcha-center {
+    text-align: center;
+}
+
+.g-recaptcha > div {
+    margin: 10px auto !important;
+    text-align: center;
+    width: auto !important;
+    height: auto !important;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media screen and (max-width:1200px) {
+	.table-column h2 {
+		font-size: 15px;
+	}
+	
+	.table-column p {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width:600px) {
+    body {
+        padding-bottom: 75rem;
+    }
+
+    nav {
+        left: 0%;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.333);
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        left: 10%;
+        width: 80%;
+    }
+
+    #name-fallback {
+        color: rgba(0, 0, 0, 0.637);
+        display: inline-block;
+        padding-top: 4%;
+        padding-bottom: 5%;
+        font-weight: bold;
+    }
+
+    #profile {
+        text-align: center;
+    }
+
+    #profile-photo {
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+    }
+
+    #resume {
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .resume-position {
+        padding-top: 20px;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .column-pad {
+        width: 0%;
+    }
+
+    #menu {
+        width: 100%;
+        display: none;
+    }
+
+    #menu a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    #toggle {
+        display: block;
+    }
+
+    nav a:first-child {
+        float: left;
+        display: block;
+    }
+
+    nav a.icon {
+        float: right;
+        height: 100%;
+    }
+
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .table-column h2 {
+        font-size: 20px;
+    }
+
+    .contact-column {
+        width: 100%;
+    }
+}
